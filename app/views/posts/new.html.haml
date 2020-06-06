@@ -1,0 +1,12 @@
+= render 'header'
+
+.main-content
+  %h1.main-content__text
+    新規投稿の作成
+  .main-content__form
+    = form_with model: @post do |form|
+      = form.text_field :name, placeholder: "タイトル"
+      = form.text_area :text, placeholder: "コメント" , rows: "10"
+      = form.submit "SEND"
+  .main-content__btn
+    投稿する

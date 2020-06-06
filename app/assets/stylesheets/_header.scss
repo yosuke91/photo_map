@@ -1,0 +1,10 @@
+.header{
+  background-color: #DDDDDD;
+  &__text{
+    font-size: 30px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
